@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Samscape's Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">
+                    <svg viewBox="0 0 100 100" width="40" height="40">
+                        <path d="M70,30 C70,20 60,15 50,15 C40,15 30,20 30,30 C30,45 70,45 70,60 C70,75 60,85 50,85 C35,85 25,75 25,75" fill="none" stroke="var(--primary-color)" stroke-width="8" stroke-linecap="round"/>
+                    </svg>
+                </span>
+                <div class="logo-text">
+                    <h1>SamScape s</h1>
+                    <span>solutions</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="btn btn-outline active">Contact Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header" style="background: linear-gradient(rgba(15, 89, 38, 0.8), rgba(15, 89, 38, 0.8)), url('Business Images/IMG-20230504-WA0034.webp') center/cover;">
+        <div class="container">
+            <h1 class="animate-up">Contact Us</h1>
+            <p class="animate-up delay-1">Get in touch to bring solutions to your landscape.</p>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-page section">
+        <div class="container">
+            <div class="contact-grid">
+                
+                <div class="contact-info scroll-reveal">
+                    <div class="contact-info-box">
+                        <h3>Contact Information</h3>
+                        <ul class="contact-details">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>Locations</strong>
+                                    The Bull Karen<br>
+                                    Windy Range Branch<br>
+                                    Pathways Branch
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone-alt"></i>
+                                <div>
+                                    <strong>Phone</strong>
+                                    0701589053
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <strong>Email</strong>
+                                    info@samscapessolutions.com
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="contact-form scroll-reveal right">
+                    <h3>Send us a message</h3>
+                    <form action="#" method="POST" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Interested Service</label>
+                            <select id="service" class="form-control">
+                                <option value="design">Garden Design</option>
+                                <option value="landscaping">Landscaping</option>
+                                <option value="maintenance">Garden Care & Maintenance</option>
+                                <option value="water">Water Features</option>
+                                <option value="hardscape">Hardscape</option>
+                                <option value="irrigation">Irrigation</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" class="form-control" placeholder="Tell us about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo footer-logo">
+                        <span class="logo-icon">
+                            <svg viewBox="0 0 100 100" width="40" height="40">
+                                <path d="M70,30 C70,20 60,15 50,15 C40,15 30,20 30,30 C30,45 70,45 70,60 C70,75 60,85 50,85 C35,85 25,75 25,75" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                        <div class="logo-text">
+                            <h1 style="color:white;">SamScape s</h1>
+                        </div>
+                    </a>
+                    <p>Bringing Solutions to landscapes. We are passionate about the environment and we love to see everything green.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>The Bull Karen<br>Windy Range Branch<br>Pathways Branch</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>0701589053</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@samscapessolutions.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Samscapes Solutions. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message. We will get back to you shortly!');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
