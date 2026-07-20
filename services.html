@@ -3,199 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - Samscape's Solutions</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Services | Samscape's Solutions</title>
+    <meta name="description" content="Explore our premium landscaping services including garden design, water features, hardscaping, and ongoing maintenance.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <span class="logo-icon">
-                    <svg viewBox="0 0 100 100" width="40" height="40">
-                        <path d="M70,30 C70,20 60,15 50,15 C40,15 30,20 30,30 C30,45 70,45 70,60 C70,75 60,85 50,85 C35,85 25,75 25,75" fill="none" stroke="var(--primary-color)" stroke-width="8" stroke-linecap="round"/>
-                    </svg>
-                </span>
-                <div class="logo-text">
-                    <h1>SamScape s</h1>
-                    <span>solutions</span>
-                </div>
-            </a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html" class="active">Services</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html" class="btn btn-outline">Contact Us</a></li>
-            </ul>
-            <div class="hamburger">
-                <i class="fas fa-bars"></i>
+
+<!-- ===================== NAVIGATION ===================== -->
+<header class="site-header" id="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+        <a href="index.html" class="nav-brand">
+            <span class="brand-icon"><i class="fas fa-leaf"></i></span>
+            <div class="brand-text">
+                <span class="brand-name">Samscape's</span>
+                <span class="brand-sub">Solutions</span>
             </div>
-        </div>
+        </a>
+        <ul class="nav-links" id="nav-links" role="list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="services.html" class="nav-link active">Services</a></li>
+            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="nav-cta">Get a Quote</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
     </nav>
+</header>
 
-    <!-- Page Header -->
-    <header class="page-header" style="background: linear-gradient(rgba(15, 89, 38, 0.8), rgba(15, 89, 38, 0.8)), url('Business Images/IMG-20230504-WA0019.webp') center/cover;">
-        <div class="container">
-            <h1 class="animate-up">Our Services</h1>
-            <p class="animate-up delay-1">Expert solutions for beautiful, breathtaking gardens.</p>
-        </div>
-    </header>
+<!-- ===================== PAGE HERO ===================== -->
+<section class="page-hero">
+    <div class="container">
+        <div class="section-label light reveal-up">Our Expertise</div>
+        <h1 class="reveal-up" style="animation-delay:0.1s">Comprehensive <em>Services</em></h1>
+        <p class="reveal-up" style="animation-delay:0.2s">Everything you need to create, enhance, and maintain a stunning outdoor environment.</p>
+    </div>
+</section>
 
-    <!-- Services Detailed -->
-    <section class="services-detailed section">
-        <div class="container">
-            <!-- Service 1 -->
-            <div class="service-row scroll-reveal">
-                <div class="service-row-img">
-                    <img src="Business Images/IMG-20230504-WA0028.webp" alt="Garden Design">
-                </div>
-                <div class="service-row-text">
-                    <div class="service-icon-large"><i class="fas fa-leaf"></i></div>
-                    <h2>Garden Design</h2>
-                    <p>Samscapes, we design and implement your ideas, transforming them into beautiful water landscapes. In gardening, we have a wide variety of products to realize any vision.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Flowers & Trees</li>
-                        <li><i class="fas fa-check"></i> Ground covers & Herbs</li>
-                        <li><i class="fas fa-check"></i> Fruits, Soil, Manure, Grass, Compost</li>
-                        <li><i class="fas fa-check"></i> Natural fence & Indigenous trees</li>
-                        <li><i class="fas fa-check"></i> Flower pots (pots, troughs)</li>
-                        <li><i class="fas fa-check"></i> Baskets (hanging & rectangular)</li>
-                    </ul>
-                </div>
+<!-- ===================== DETAILED SERVICES ===================== -->
+<section class="section-light">
+    <div class="container">
+        <div class="services-grid">
+            <div class="service-card reveal-up" id="design" style="background: var(--cream);">
+                <div class="service-icon"><i class="fas fa-drafting-compass"></i></div>
+                <h3 style="color: var(--forest-deep);">Garden Design</h3>
+                <p style="color: var(--text-mid);">We begin with a deep understanding of your space and your desires. Our designs balance aesthetics, functionality, and ecological sustainability to create a master plan for your outdoor sanctuary.</p>
             </div>
-
-            <!-- Service 2 -->
-            <div class="service-row reverse scroll-reveal">
-                <div class="service-row-img">
-                    <img src="Business Images/IMG-20230504-WA0022.webp" alt="Landscaping">
-                </div>
-                <div class="service-row-text">
-                    <div class="service-icon-large"><i class="fas fa-seedling"></i></div>
-                    <h2>Landscaping</h2>
-                    <p>We transform your dreams into ideas, and then finally beautiful breath-taking gardens. Our comprehensive landscaping services ensure that every element of your outdoor space is perfectly balanced and aesthetically pleasing.</p>
-                </div>
+            
+            <div class="service-card reveal-up" id="landscaping" style="animation-delay:0.1s; background: var(--cream);">
+                <div class="service-icon"><i class="fas fa-tractor"></i></div>
+                <h3 style="color: var(--forest-deep);">Landscaping & Earthworks</h3>
+                <p style="color: var(--text-mid);">From clearing and grading to soil preparation and contouring, we provide the essential groundwork necessary for a thriving, beautiful landscape. We handle projects of all scales.</p>
             </div>
-
-            <!-- Service 3 -->
-            <div class="service-row scroll-reveal">
-                <div class="service-row-img">
-                    <img src="Business Images/IMG-20230504-WA0015.webp" alt="Garden Care and Maintenance">
-                </div>
-                <div class="service-row-text">
-                    <div class="service-icon-large"><i class="fas fa-hands-holding-circle"></i></div>
-                    <h2>Garden Care and Maintenance</h2>
-                    <p>After we transform your ideas into lovely gardens, we are there to ensure your garden grows and flourishes. Regular maintenance, pruning, fertilizing, and seasonal care are handled by our expert team to keep your landscape looking pristine year-round.</p>
-                </div>
+            
+            <div class="service-card reveal-up" id="water" style="animation-delay:0.2s; background: var(--cream);">
+                <div class="service-icon"><i class="fas fa-water"></i></div>
+                <h3 style="color: var(--forest-deep);">Water Features</h3>
+                <p style="color: var(--text-mid);">Introduce the calming presence of water into your garden. We design and install bespoke ponds, elegant fountains, cascading waterfalls, and serene streams.</p>
             </div>
-
-            <!-- Service 4 -->
-            <div class="service-row reverse scroll-reveal">
-                <div class="service-row-img">
-                    <img src="Business Images/IMG-20230505-WA0088.webp" alt="Water Features">
-                </div>
-                <div class="service-row-text">
-                    <div class="service-icon-large"><i class="fas fa-water"></i></div>
-                    <h2>Water Features</h2>
-                    <p>Every great idea can be transformed into a flowing water fall! We offer creative water features including waterfalls, fountains, small ponds, fish ponds, streams, and indoor container water gardens that bring tranquility and life to your space.</p>
-                </div>
+            
+            <div class="service-card reveal-up" id="hardscaping" style="background: var(--cream);">
+                <div class="service-icon"><i class="fas fa-hammer"></i></div>
+                <h3 style="color: var(--forest-deep);">Hardscaping</h3>
+                <p style="color: var(--text-mid);">The structural foundation of your garden. We expertly craft stone pathways, inviting patios, sturdy retaining walls, and beautiful pergolas using high-quality materials.</p>
             </div>
-
-            <!-- Service 5 -->
-            <div class="service-row scroll-reveal">
-                <div class="service-row-img">
-                    <img src="Business Images/IMG-20230507-WA0004.webp" alt="Hardscape">
-                </div>
-                <div class="service-row-text">
-                    <div class="service-icon-large"><i class="fas fa-cubes"></i></div>
-                    <h2>Hardcape</h2>
-                    <p>We assess your needs and give you solutions best suited for you. No job is too big or too small. From patios and walkways to retaining walls and structural elements, our hardscaping provides the solid foundation your landscape needs.</p>
-                </div>
+            
+            <div class="service-card reveal-up" id="irrigation" style="animation-delay:0.1s; background: var(--cream);">
+                <div class="service-icon"><i class="fas fa-faucet"></i></div>
+                <h3 style="color: var(--forest-deep);">Irrigation Systems</h3>
+                <p style="color: var(--text-mid);">Protect your investment with intelligent water management. Our custom irrigation systems are designed for optimal efficiency, ensuring your plants receive the right amount of water while minimizing waste.</p>
             </div>
-
-            <!-- Service 6 -->
-            <div class="service-row reverse scroll-reveal">
-                <div class="service-row-img">
-                    <img src="Business Images/IMG-20230504-WA0032.webp" alt="Irrigation">
-                </div>
-                <div class="service-row-text">
-                    <div class="service-icon-large"><i class="fas fa-tint"></i></div>
-                    <h2>Irrigation</h2>
-                    <p>Nothing brings out more beauty like a beautiful landscape or evergreen garden during the dry season. We design and install efficient irrigation systems tailored to the specific needs of your plants and lawn to conserve water and ensure optimal growth.</p>
-                </div>
+            
+            <div class="service-card reveal-up" id="maintenance" style="animation-delay:0.2s; background: var(--cream);">
+                <div class="service-icon"><i class="fas fa-scissors"></i></div>
+                <h3 style="color: var(--forest-deep);">Ongoing Maintenance</h3>
+                <p style="color: var(--text-mid);">A beautiful garden requires consistent care. Our maintenance packages include expert pruning, lawn care, fertilization, pest management, and seasonal adjustments to keep your landscape pristine year-round.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Call to action -->
-    <section class="cta section bg-light center">
-        <div class="container scroll-reveal">
-            <h2>Ready to Transform Your Landscape?</h2>
-            <p style="max-width: 600px; margin: 20px auto 40px; font-size: 18px;">Contact us today for a site visit and a detailed quotation tailored to your vision and budget.</p>
-            <a href="contact.html" class="btn btn-primary" style="padding: 18px 40px; font-size: 16px;">Get in Touch</a>
+<!-- ===================== CTA BANNER ===================== -->
+<section class="cta-banner">
+    <img src="Business Images/IMG-20230504-WA0028.webp" alt="Landscaping project" class="cta-bg" loading="lazy">
+    <div class="cta-overlay"></div>
+    <div class="container cta-content">
+        <h2 class="reveal-up">Need a Custom<br><em>Solution?</em></h2>
+        <p class="reveal-up">We tailor our services to meet the unique needs of your property.</p>
+        <div class="cta-actions reveal-up">
+            <a href="contact.html" class="btn btn-gold">Contact Us Today</a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="index.html" class="logo footer-logo">
-                        <span class="logo-icon">
-                            <svg viewBox="0 0 100 100" width="40" height="40">
-                                <path d="M70,30 C70,20 60,15 50,15 C40,15 30,20 30,30 C30,45 70,45 70,60 C70,75 60,85 50,85 C35,85 25,75 25,75" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
-                            </svg>
-                        </span>
-                        <div class="logo-text">
-                            <h1 style="color:white;">SamScape s</h1>
-                        </div>
-                    </a>
-                    <p>Bringing Solutions to landscapes. We are passionate about the environment and we love to see everything green.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+    <div class="footer-top">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="nav-brand">
+                    <span class="brand-icon"><i class="fas fa-leaf"></i></span>
+                    <div class="brand-text">
+                        <span class="brand-name">Samscape's</span>
+                        <span class="brand-sub">Solutions</span>
+                    </div>
+                </a>
+                <p>Crafting extraordinary outdoor spaces across Karen and Nairobi with passion, expertise, and an eye for natural beauty.</p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="services.html">Garden Design</a></li>
+                    <li><a href="services.html">Landscaping</a></li>
+                    <li><a href="services.html">Water Features</a></li>
+                    <li><a href="services.html">Hardscaping</a></li>
+                    <li><a href="services.html">Maintenance</a></li>
+                    <li><a href="services.html">Irrigation</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get In Touch</h4>
+                <div class="footer-contacts">
+                    <div class="fc-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:0701589053">0701 589 053</a>
+                    </div>
+                    <div class="fc-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:info@samscapessolutions.com">info@samscapessolutions.com</a>
+                    </div>
+                    <div class="fc-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>The Bull Karen · Windy Range · Pathways</span>
                     </div>
                 </div>
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h3>Contact Us</h3>
-                    <ul>
-                        <li>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>The Bull Karen<br>Windy Range Branch<br>Pathways Branch</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-phone-alt"></i>
-                            <span>0701589053</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-envelope"></i>
-                            <span>info@samscapessolutions.com</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Samscapes Solutions. All Rights Reserved.</p>
             </div>
         </div>
-    </footer>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2025 Samscape's Solutions. All rights reserved.</p>
+            <p>Greener Landscapes, Greater Spaces 🌿</p>
+        </div>
+    </div>
+</footer>
 
-    <script src="script.js"></script>
+<a href="#" class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+<script src="script.js"></script>
 </body>
 </html>

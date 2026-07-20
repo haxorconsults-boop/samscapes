@@ -3,302 +3,522 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samscape's Solutions | Greener Landscapes!</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Samscape's Solutions | Greener Landscapes, Greater Spaces</title>
+    <meta name="description" content="Samscape's Solutions — Kenya's premium landscaping company. Expert garden design, maintenance, water features, hardscaping & irrigation across Karen, Nairobi.">
+    <meta property="og:title" content="Samscape's Solutions | Greener Landscapes">
+    <meta property="og:description" content="Transforming outdoor spaces into living masterpieces. Serving Karen, Nairobi & beyond.">
+    <meta property="og:url" content="https://haxorconsults-boop.github.io/samscapes">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">
-                <span class="logo-icon">
-                    <svg viewBox="0 0 100 100" width="40" height="40">
-                        <!-- Simple stylized S -->
-                        <path d="M70,30 C70,20 60,15 50,15 C40,15 30,20 30,30 C30,45 70,45 70,60 C70,75 60,85 50,85 C35,85 25,75 25,75" fill="none" stroke="var(--primary-color)" stroke-width="8" stroke-linecap="round"/>
-                    </svg>
-                </span>
-                <div class="logo-text">
-                    <h1>SamScape s</h1>
-                    <span>solutions</span>
-                </div>
-            </a>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html" class="btn btn-outline">Contact Us</a></li>
-            </ul>
-            <div class="hamburger">
-                <i class="fas fa-bars"></i>
+
+<!-- ===================== NAVIGATION ===================== -->
+<header class="site-header" id="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+        <a href="index.html" class="nav-brand">
+            <span class="brand-icon"><i class="fas fa-leaf"></i></span>
+            <div class="brand-text">
+                <span class="brand-name">Samscape's</span>
+                <span class="brand-sub">Solutions</span>
             </div>
-        </div>
+        </a>
+        <ul class="nav-links" id="nav-links" role="list">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="nav-cta">Get a Quote</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
     </nav>
+</header>
 
-    <!-- Hero Section -->
-    <header class="hero" id="home">
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="home">
+    <div class="hero-media">
+        <img src="Business Images/IMG-20230504-WA0034.webp" alt="Samscape's lush garden design" class="hero-bg" loading="eager">
         <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <h2 class="animate-up">Bringing Solutions to Landscapes</h2>
-            <h1 class="animate-up delay-1">Greener Landscapes!</h1>
-            <p class="animate-up delay-2">We are passionate about the environment and we love to see everything green. With over ten years' experience across Kenya.</p>
-            <div class="hero-btns animate-up delay-3">
-                <a href="services.html" class="btn btn-primary">Explore Services</a>
-                <a href="contact.html" class="btn btn-secondary">Get a Quote</a>
-            </div>
+        <div class="hero-gradient"></div>
+    </div>
+    <div class="hero-content">
+        <div class="hero-badge reveal-up">
+            <i class="fas fa-seedling"></i>
+            <span>Premium Landscaping Since 2017</span>
         </div>
-    </header>
+        <h1 class="hero-title reveal-up">
+            We Craft <em>Living</em><br>Masterpieces
+        </h1>
+        <p class="hero-subtitle reveal-up">
+            Transforming outdoor spaces across Karen and Nairobi into breathtaking, 
+            sustainable gardens that inspire and endure.
+        </p>
+        <div class="hero-actions reveal-up">
+            <a href="gallery.html" class="btn btn-primary">Explore Our Work</a>
+            <a href="contact.html" class="btn btn-ghost">
+                <i class="fas fa-phone"></i>
+                <span>0701 589 053</span>
+            </a>
+        </div>
+    </div>
+    <div class="hero-scroll">
+        <span>Scroll to explore</span>
+        <div class="scroll-line"></div>
+    </div>
+    <div class="hero-cards">
+        <div class="hero-stat reveal-right">
+            <strong>500+</strong>
+            <span>Projects Completed</span>
+        </div>
+        <div class="hero-stat reveal-right" style="animation-delay:0.1s">
+            <strong>7+</strong>
+            <span>Years of Excellence</span>
+        </div>
+        <div class="hero-stat reveal-right" style="animation-delay:0.2s">
+            <strong>3</strong>
+            <span>Premium Locations</span>
+        </div>
+    </div>
+</section>
 
-    <!-- About Section -->
-    <section class="about section" id="about">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-text scroll-reveal">
-                    <span class="subtitle">About Us</span>
-                    <h2>A Top Landscaping Company in Kenya</h2>
-                    <p>Samscapes Solution is a company registered as a limited company. The name simply means Bringing Solutions to landscapes. We are passionate about the environment and we love to see everything green.</p>
-                    <p>Our team is made up of visionary men and women who love nature. With over ten years' experience across the country, you can depend on us to deliver.</p>
-                    
-                    <div class="mission-vision">
-                        <div class="mv-box">
-                            <i class="fas fa-bullseye"></i>
-                            <h3>Our Mission</h3>
-                            <p>To deliver visionary landscaping with a passion for the environment and love for nature.</p>
-                        </div>
-                        <div class="mv-box">
-                            <i class="fas fa-eye"></i>
-                            <h3>Our Vision</h3>
-                            <p>To be the best service delivery landscapers in Africa while meeting clients' needs and exceeding their expectations.</p>
-                        </div>
+<!-- ===================== MARQUEE STRIP ===================== -->
+<div class="marquee-strip">
+    <div class="marquee-track">
+        <span>Garden Design</span><span class="sep">✦</span>
+        <span>Lawn Care</span><span class="sep">✦</span>
+        <span>Water Features</span><span class="sep">✦</span>
+        <span>Hardscaping</span><span class="sep">✦</span>
+        <span>Irrigation Systems</span><span class="sep">✦</span>
+        <span>Tree Surgery</span><span class="sep">✦</span>
+        <span>Maintenance</span><span class="sep">✦</span>
+        <span>Planting</span><span class="sep">✦</span>
+        <span>Garden Design</span><span class="sep">✦</span>
+        <span>Lawn Care</span><span class="sep">✦</span>
+        <span>Water Features</span><span class="sep">✦</span>
+        <span>Hardscaping</span><span class="sep">✦</span>
+        <span>Irrigation Systems</span><span class="sep">✦</span>
+        <span>Tree Surgery</span><span class="sep">✦</span>
+        <span>Maintenance</span><span class="sep">✦</span>
+        <span>Planting</span><span class="sep">✦</span>
+    </div>
+</div>
+
+<!-- ===================== ABOUT INTRO ===================== -->
+<section class="about-intro section-light" id="about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-images">
+                <div class="img-primary reveal-left">
+                    <img src="Business Images/IMG-20230505-WA0082.webp" alt="Beautiful garden by Samscape's" loading="lazy">
+                </div>
+                <div class="img-secondary reveal-up">
+                    <img src="Business Images/IMG-20230507-WA0000.webp" alt="Samscape's landscaping work" loading="lazy">
+                </div>
+                <div class="about-badge-float">
+                    <i class="fas fa-award"></i>
+                    <div>
+                        <strong>Award Winning</strong>
+                        <span>Garden Design</span>
                     </div>
                 </div>
-                <div class="about-image scroll-reveal right">
-                    <!-- We use one of the images from the folder -->
-                    <img src="Business Images/IMG-20230505-WA0082.webp" alt="Beautiful landscaping">
-                    <div class="experience-badge">
-                        <span class="number">10+</span>
-                        <span class="text">Years<br>Experience</span>
+            </div>
+            <div class="about-text reveal-right">
+                <div class="section-label">About Us</div>
+                <h2 class="section-title">Where Nature Meets<br><em>Artistry</em></h2>
+                <p class="lead-text">Samscape's Solutions was born from a deep passion for the natural world. We believe every outdoor space holds the potential to become a living work of art.</p>
+                <p>Operating from Karen, Nairobi, we bring together horticultural expertise, creative vision, and meticulous craftsmanship to deliver landscapes that don't just look beautiful — they breathe, grow, and thrive for years to come.</p>
+                <div class="about-features">
+                    <div class="about-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Certified Horticultural Experts</span>
+                    </div>
+                    <div class="about-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Eco-Friendly & Sustainable Practices</span>
+                    </div>
+                    <div class="about-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>End-to-End Project Management</span>
+                    </div>
+                    <div class="about-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Bespoke Designs for Every Client</span>
+                    </div>
+                </div>
+                <a href="about.html" class="btn btn-primary">Our Full Story</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== SERVICES ===================== -->
+<section class="services section-dark" id="services">
+    <div class="hero-curve top"></div>
+    <div class="container">
+        <div class="section-header centered">
+            <div class="section-label light">What We Do</div>
+            <h2 class="section-title light">Complete Garden<br><em>Solutions</em></h2>
+            <p class="section-desc light">From concept to completion, we handle every aspect of your outdoor transformation.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card reveal-up">
+                <div class="service-icon"><i class="fas fa-drafting-compass"></i></div>
+                <h3>Garden Design</h3>
+                <p>Bespoke garden layouts crafted around your lifestyle, aesthetic preferences, and the unique character of your space.</p>
+                <a href="services.html#design" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="service-card reveal-up" style="animation-delay:0.1s">
+                <div class="service-icon"><i class="fas fa-tractor"></i></div>
+                <h3>Landscaping & Earthworks</h3>
+                <p>Comprehensive ground preparation, grading, contouring, and foundational landscaping for any scale of project.</p>
+                <a href="services.html#landscaping" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="service-card reveal-up" style="animation-delay:0.2s">
+                <div class="service-icon"><i class="fas fa-water"></i></div>
+                <h3>Water Features</h3>
+                <p>Custom-designed ponds, fountains, waterfalls, and rill streams that bring tranquil beauty and natural sound.</p>
+                <a href="services.html#water" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="service-card reveal-up" style="animation-delay:0.3s">
+                <div class="service-icon"><i class="fas fa-hammer"></i></div>
+                <h3>Hardscaping</h3>
+                <p>Stone pathways, patios, retaining walls, pergolas, and decorative structures that define and enrich outdoor living.</p>
+                <a href="services.html#hardscaping" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="service-card reveal-up" style="animation-delay:0.4s">
+                <div class="service-icon"><i class="fas fa-faucet"></i></div>
+                <h3>Irrigation Systems</h3>
+                <p>Smart, efficient irrigation solutions engineered to keep your garden lush while conserving water resources.</p>
+                <a href="services.html#irrigation" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="service-card reveal-up" style="animation-delay:0.5s">
+                <div class="service-icon"><i class="fas fa-scissors"></i></div>
+                <h3>Ongoing Maintenance</h3>
+                <p>Regular professional upkeep including lawn care, pruning, fertilisation, and seasonal planting programmes.</p>
+                <a href="services.html#maintenance" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="services-cta">
+            <a href="services.html" class="btn btn-gold">View All Services</a>
+        </div>
+    </div>
+    <div class="hero-curve bottom"></div>
+</section>
+
+<!-- ===================== WHY US ===================== -->
+<section class="why-us section-light">
+    <div class="container">
+        <div class="why-grid">
+            <div class="why-text reveal-left">
+                <div class="section-label">Why Samscape's</div>
+                <h2 class="section-title">Unmatched<br><em>Expertise</em></h2>
+                <p>We combine deep horticultural knowledge with a designer's eye for beauty. Every project is treated as a unique opportunity to create something extraordinary.</p>
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <div class="stat-num" data-target="500">0</div>
+                        <div class="stat-label">Projects Done</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num" data-target="7">0</div>
+                        <div class="stat-label">Years Active</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num" data-target="98">0</div>
+                        <div class="stat-label">% Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+            <div class="why-pillars reveal-right">
+                <div class="pillar">
+                    <div class="pillar-icon"><i class="fas fa-leaf"></i></div>
+                    <div>
+                        <h4>Eco-Conscious Approach</h4>
+                        <p>Native plants, water conservation, and sustainable materials at the heart of every design.</p>
+                    </div>
+                </div>
+                <div class="pillar">
+                    <div class="pillar-icon"><i class="fas fa-pencil-ruler"></i></div>
+                    <div>
+                        <h4>Tailored Designs</h4>
+                        <p>No two gardens are alike. We listen, design, and deliver something uniquely yours.</p>
+                    </div>
+                </div>
+                <div class="pillar">
+                    <div class="pillar-icon"><i class="fas fa-users"></i></div>
+                    <div>
+                        <h4>Expert Team</h4>
+                        <p>Qualified horticulturists, landscape architects, and craftsmen working in harmony.</p>
+                    </div>
+                </div>
+                <div class="pillar">
+                    <div class="pillar-icon"><i class="fas fa-shield-alt"></i></div>
+                    <div>
+                        <h4>Quality Guaranteed</h4>
+                        <p>We stand behind every project with aftercare support and a satisfaction guarantee.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Services Section -->
-    <section class="services section bg-light" id="services">
-        <div class="container">
-            <div class="section-header center scroll-reveal">
-                <span class="subtitle">Our Expertise</span>
-                <h2>Our Services</h2>
-                <p>We design and implement your ideas, transforming them into beautiful landscapes.</p>
+<!-- ===================== GALLERY PREVIEW ===================== -->
+<section class="gallery-preview section-cream" id="gallery">
+    <div class="container">
+        <div class="section-header centered">
+            <div class="section-label">Our Portfolio</div>
+            <h2 class="section-title">A Glimpse of Our<br><em>Living Artistry</em></h2>
+        </div>
+        <div class="gallery-masonry">
+            <div class="gallery-item tall reveal-scale">
+                <img src="Business Images/IMG-20230505-WA0086.webp" alt="Garden project" loading="lazy">
+                <div class="gallery-hover"><span>View Project</span></div>
             </div>
-            
-            <div class="services-grid">
-                <div class="service-card scroll-reveal">
-                    <div class="service-icon"><i class="fas fa-leaf"></i></div>
-                    <h3>Garden Design</h3>
-                    <p>Flowers, Trees, Ground covers, Herbs, Fruits, Soil, Manure, Grass, Compost, Natural fence, Indigenous ceremonial trees, Flower pots, and Baskets.</p>
+            <div class="gallery-item reveal-scale" style="animation-delay:0.1s">
+                <img src="Business Images/IMG-20230504-WA0022.webp" alt="Landscaping" loading="lazy">
+                <div class="gallery-hover"><span>View Project</span></div>
+            </div>
+            <div class="gallery-item reveal-scale" style="animation-delay:0.15s">
+                <img src="Business Images/IMG-20230525-WA0019.webp" alt="Water feature" loading="lazy">
+                <div class="gallery-hover"><span>View Project</span></div>
+            </div>
+            <div class="gallery-item wide reveal-scale" style="animation-delay:0.2s">
+                <img src="Business Images/IMG-20230504-WA0028.webp" alt="Hardscaping" loading="lazy">
+                <div class="gallery-hover"><span>View Project</span></div>
+            </div>
+            <div class="gallery-item reveal-scale" style="animation-delay:0.25s">
+                <img src="Business Images/IMG-20230504-WA0019.webp" alt="Garden maintenance" loading="lazy">
+                <div class="gallery-hover"><span>View Project</span></div>
+            </div>
+            <div class="gallery-item tall reveal-scale" style="animation-delay:0.3s">
+                <img src="Business Images/IMG-20230507-WA0004.webp" alt="Planting design" loading="lazy">
+                <div class="gallery-hover"><span>View Project</span></div>
+            </div>
+            <div class="gallery-item reveal-scale" style="animation-delay:0.35s">
+                <img src="Business Images/IMG-20230507-WA0008.webp" alt="Irrigation" loading="lazy">
+                <div class="gallery-hover"><span>View Project</span></div>
+            </div>
+            <div class="gallery-item reveal-scale" style="animation-delay:0.4s">
+                <img src="Business Images/IMG-20230505-WA0088.webp" alt="Garden project" loading="lazy">
+                <div class="gallery-hover"><span>View Project</span></div>
+            </div>
+        </div>
+        <div class="section-cta">
+            <a href="gallery.html" class="btn btn-primary">View Full Gallery</a>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== PROCESS ===================== -->
+<section class="process section-dark">
+    <div class="hero-curve top"></div>
+    <div class="container">
+        <div class="section-header centered">
+            <div class="section-label light">How It Works</div>
+            <h2 class="section-title light">Our Design<br><em>Process</em></h2>
+        </div>
+        <div class="process-steps">
+            <div class="process-step reveal-up">
+                <div class="step-number">01</div>
+                <div class="step-icon"><i class="fas fa-comments"></i></div>
+                <h3>Consultation</h3>
+                <p>We begin with a thorough on-site visit and detailed conversation about your vision, lifestyle, and budget.</p>
+            </div>
+            <div class="process-connector"></div>
+            <div class="process-step reveal-up" style="animation-delay:0.15s">
+                <div class="step-number">02</div>
+                <div class="step-icon"><i class="fas fa-pencil-alt"></i></div>
+                <h3>Design & Planning</h3>
+                <p>Our designers craft a bespoke concept plan with material selections, plant palettes, and a detailed timeline.</p>
+            </div>
+            <div class="process-connector"></div>
+            <div class="process-step reveal-up" style="animation-delay:0.3s">
+                <div class="step-number">03</div>
+                <div class="step-icon"><i class="fas fa-hard-hat"></i></div>
+                <h3>Expert Execution</h3>
+                <p>Our skilled team brings the design to life with precision, craftsmanship, and an eye for every detail.</p>
+            </div>
+            <div class="process-connector"></div>
+            <div class="process-step reveal-up" style="animation-delay:0.45s">
+                <div class="step-number">04</div>
+                <div class="step-icon"><i class="fas fa-heart"></i></div>
+                <h3>Ongoing Care</h3>
+                <p>We offer dedicated maintenance programmes to keep your garden thriving season after season.</p>
+            </div>
+        </div>
+    </div>
+    <div class="hero-curve bottom"></div>
+</section>
+
+<!-- ===================== TESTIMONIALS ===================== -->
+<section class="testimonials section-light">
+    <div class="container">
+        <div class="section-header centered">
+            <div class="section-label">Client Stories</div>
+            <h2 class="section-title">What Our Clients<br><em>Say</em></h2>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card reveal-up">
+                <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+                <p>"Samscape's completely transformed our Karen home garden. The attention to detail and the quality of work was outstanding. Our garden is now the talk of the neighbourhood."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">J</div>
+                    <div>
+                        <strong>Jane M.</strong>
+                        <span>Karen Resident</span>
+                    </div>
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                 </div>
-                
-                <div class="service-card scroll-reveal delay-1">
-                    <div class="service-icon"><i class="fas fa-seedling"></i></div>
-                    <h3>Landscaping</h3>
-                    <p>We transform your dreams into ideas, and then finally beautiful breath-taking gardens.</p>
+            </div>
+            <div class="testimonial-card reveal-up" style="animation-delay:0.15s">
+                <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+                <p>"Professional, punctual, and passionate about their craft. They designed a stunning water feature and planted a beautiful indigenous garden. Highly recommended."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">D</div>
+                    <div>
+                        <strong>David K.</strong>
+                        <span>Windy Range</span>
+                    </div>
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                 </div>
-                
-                <div class="service-card scroll-reveal delay-2">
-                    <div class="service-icon"><i class="fas fa-hands-holding-circle"></i></div>
-                    <h3>Garden Care & Maintenance</h3>
-                    <p>After we transform your ideas into lovely gardens, we are there to ensure your garden grows and flourishes.</p>
-                </div>
-                
-                <div class="service-card scroll-reveal">
-                    <div class="service-icon"><i class="fas fa-water"></i></div>
-                    <h3>Water Features</h3>
-                    <p>Every great idea can be transformed into a flowing water fall! We offer creative water features.</p>
-                </div>
-                
-                <div class="service-card scroll-reveal delay-1">
-                    <div class="service-icon"><i class="fas fa-cubes"></i></div>
-                    <h3>Hardscape</h3>
-                    <p>We assess your needs and give you solutions best suited for you. No job is too big or too small.</p>
-                </div>
-                
-                <div class="service-card scroll-reveal delay-2">
-                    <div class="service-icon"><i class="fas fa-tint"></i></div>
-                    <h3>Irrigation</h3>
-                    <p>Nothing brings out more beauty like a beautiful landscape or evergreen garden during the dry season.</p>
+            </div>
+            <div class="testimonial-card reveal-up" style="animation-delay:0.3s">
+                <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+                <p>"From the initial design consultation to the final planting, the team at Samscape's was exceptional. Our commercial property has never looked better."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">S</div>
+                    <div>
+                        <strong>Sarah O.</strong>
+                        <span>Pathways Area</span>
+                    </div>
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Process Section -->
-    <section class="process section" id="process">
-        <div class="container">
-            <div class="section-header center scroll-reveal">
-                <span class="subtitle">How We Work</span>
-                <h2>Our Process</h2>
+<!-- ===================== LOCATIONS ===================== -->
+<section class="locations section-cream">
+    <div class="container">
+        <div class="section-header centered">
+            <div class="section-label">Find Us</div>
+            <h2 class="section-title">Three Convenient<br><em>Locations</em></h2>
+        </div>
+        <div class="locations-grid">
+            <div class="location-card reveal-up">
+                <div class="location-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <h3>The Bull Karen</h3>
+                <p>Our flagship location in the heart of Karen, serving the Karen and Lang'ata areas.</p>
+                <a href="contact.html" class="location-link">Get Directions <i class="fas fa-external-link-alt"></i></a>
             </div>
-            
-            <div class="process-timeline">
-                <div class="process-step scroll-reveal">
-                    <div class="step-number">01</div>
-                    <h3>Site Visit</h3>
-                    <p>We visit your location to assess the space, soil, and understand your vision.</p>
-                </div>
-                <div class="process-step scroll-reveal delay-1">
-                    <div class="step-number">02</div>
-                    <h3>Design</h3>
-                    <p>Our experts draft a customized landscaping design tailored to your preferences.</p>
-                </div>
-                <div class="process-step scroll-reveal delay-2">
-                    <div class="step-number">03</div>
-                    <h3>Quotation</h3>
-                    <p>We provide a detailed and transparent quotation for the proposed project.</p>
-                </div>
-                <div class="process-step scroll-reveal">
-                    <div class="step-number">04</div>
-                    <h3>Budget</h3>
-                    <p>We align the design and implementation plans with your approved budget.</p>
-                </div>
-                <div class="process-step scroll-reveal delay-1">
-                    <div class="step-number">05</div>
-                    <h3>Implementation</h3>
-                    <p>Our skilled team executes the project with precision and meticulous detail.</p>
-                </div>
-                <div class="process-step scroll-reveal delay-2">
-                    <div class="step-number">06</div>
-                    <h3>Maintenance</h3>
-                    <p>We offer ongoing care to ensure your garden remains healthy and vibrant.</p>
-                </div>
+            <div class="location-card featured reveal-up" style="animation-delay:0.15s">
+                <div class="location-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <h3>Windy Range Branch</h3>
+                <p>Conveniently located to serve clients across the Windy Range and surrounding residential estates.</p>
+                <a href="contact.html" class="location-link">Get Directions <i class="fas fa-external-link-alt"></i></a>
+            </div>
+            <div class="location-card reveal-up" style="animation-delay:0.3s">
+                <div class="location-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <h3>Pathways Branch</h3>
+                <p>Serving Pathways, Ngong Road corridor, and the wider south Nairobi residential communities.</p>
+                <a href="contact.html" class="location-link">Get Directions <i class="fas fa-external-link-alt"></i></a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Core Values Section -->
-    <section class="values section bg-dark text-white">
-        <div class="container">
-            <div class="values-flex">
-                <div class="values-text scroll-reveal">
-                    <h2>Our Core Values</h2>
-                    <ul class="values-list">
-                        <li><i class="fas fa-check-circle"></i> Customer-focused services</li>
-                        <li><i class="fas fa-check-circle"></i> Passion for nature</li>
-                        <li><i class="fas fa-check-circle"></i> Integrity in service delivery</li>
-                        <li><i class="fas fa-check-circle"></i> Efficient execution of projects</li>
-                        <li><i class="fas fa-check-circle"></i> Meticulous and love for detail</li>
-                        <li><i class="fas fa-check-circle"></i> Reliability and dependability at all times</li>
-                        <li><i class="fas fa-check-circle"></i> Cost-effective products and services</li>
-                    </ul>
-                </div>
-                <div class="values-image scroll-reveal right">
-                     <img src="Business Images/IMG-20230504-WA0034.webp" alt="Landscaping details">
-                </div>
-            </div>
+<!-- ===================== CTA BANNER ===================== -->
+<section class="cta-banner">
+    <img src="Business Images/IMG-20230505-WA0090.webp" alt="Garden" class="cta-bg" loading="lazy">
+    <div class="cta-overlay"></div>
+    <div class="container cta-content">
+        <h2 class="reveal-up">Ready to Transform<br><em>Your Space?</em></h2>
+        <p class="reveal-up">Let's create something extraordinary together. Contact us today for a free consultation.</p>
+        <div class="cta-actions reveal-up">
+            <a href="contact.html" class="btn btn-gold">Book Free Consultation</a>
+            <a href="tel:0701589053" class="btn btn-ghost-light"><i class="fas fa-phone"></i> 0701 589 053</a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Gallery Section -->
-    <section class="gallery section" id="gallery">
-        <div class="container">
-            <div class="section-header center scroll-reveal">
-                <span class="subtitle">Our Portfolio</span>
-                <h2>Recent Projects</h2>
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+    <div class="footer-top">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="nav-brand">
+                    <span class="brand-icon"><i class="fas fa-leaf"></i></span>
+                    <div class="brand-text">
+                        <span class="brand-name">Samscape's</span>
+                        <span class="brand-sub">Solutions</span>
+                    </div>
+                </a>
+                <p>Crafting extraordinary outdoor spaces across Karen and Nairobi with passion, expertise, and an eye for natural beauty.</p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
             </div>
-            
-            <div class="gallery-grid">
-                <a href="Business Images/IMG-20230505-WA0086.webp" class="gallery-item scroll-reveal">
-                    <img src="Business Images/IMG-20230505-WA0086.webp" alt="Gallery Image 1" loading="lazy">
-                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
-                </a>
-                <a href="Business Images/IMG-20230505-WA0087.webp" class="gallery-item scroll-reveal delay-1">
-                    <img src="Business Images/IMG-20230505-WA0087.webp" alt="Gallery Image 2" loading="lazy">
-                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
-                </a>
-                <a href="Business Images/IMG-20230505-WA0088.webp" class="gallery-item scroll-reveal delay-2">
-                    <img src="Business Images/IMG-20230505-WA0088.webp" alt="Gallery Image 3" loading="lazy">
-                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
-                </a>
-                <a href="Business Images/IMG-20230505-WA0090.webp" class="gallery-item scroll-reveal">
-                    <img src="Business Images/IMG-20230505-WA0090.webp" alt="Gallery Image 4" loading="lazy">
-                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
-                </a>
-                <a href="Business Images/IMG-20230517-WA0012.webp" class="gallery-item scroll-reveal delay-1">
-                    <img src="Business Images/IMG-20230517-WA0012.webp" alt="Gallery Image 5" loading="lazy">
-                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
-                </a>
-                <a href="gallery.html" class="gallery-item scroll-reveal delay-2">
-                    <img src="Business Images/IMG-20230525-WA0019.webp" alt="Gallery Image 6" loading="lazy">
-                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
-                </a>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </div>
-        </div>
-    </section>
-
-    <!-- Footer / Contact -->
-    <footer class="footer" id="contact">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="#" class="logo footer-logo">
-                        <span class="logo-icon">
-                            <svg viewBox="0 0 100 100" width="40" height="40">
-                                <path d="M70,30 C70,20 60,15 50,15 C40,15 30,20 30,30 C30,45 70,45 70,60 C70,75 60,85 50,85 C35,85 25,75 25,75" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
-                            </svg>
-                        </span>
-                        <div class="logo-text">
-                            <h1 style="color:white;">SamScape s</h1>
-                        </div>
-                    </a>
-                    <p>Bringing Solutions to landscapes. We are passionate about the environment and we love to see everything green.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="services.html">Garden Design</a></li>
+                    <li><a href="services.html">Landscaping</a></li>
+                    <li><a href="services.html">Water Features</a></li>
+                    <li><a href="services.html">Hardscaping</a></li>
+                    <li><a href="services.html">Maintenance</a></li>
+                    <li><a href="services.html">Irrigation</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get In Touch</h4>
+                <div class="footer-contacts">
+                    <div class="fc-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:0701589053">0701 589 053</a>
+                    </div>
+                    <div class="fc-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:info@samscapessolutions.com">info@samscapessolutions.com</a>
+                    </div>
+                    <div class="fc-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>The Bull Karen · Windy Range · Pathways</span>
                     </div>
                 </div>
-                
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-contact">
-                    <h3>Contact Us</h3>
-                    <ul>
-                        <li>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>The Bull Karen<br>Windy Range Branch<br>Pathways Branch</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-phone-alt"></i>
-                            <span>0701589053</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-envelope"></i>
-                            <span>info@samscapessolutions.com</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2024 Samscapes Solutions. All Rights Reserved.</p>
             </div>
         </div>
-    </footer>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2025 Samscape's Solutions. All rights reserved.</p>
+            <p>Greener Landscapes, Greater Spaces 🌿</p>
+        </div>
+    </div>
+</footer>
 
-    <script src="script.js"></script>
+<a href="#" class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+<script src="script.js"></script>
 </body>
 </html>

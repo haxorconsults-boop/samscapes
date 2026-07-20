@@ -3,135 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery - Samscape's Solutions</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Gallery | Samscape's Solutions</title>
+    <meta name="description" content="Explore our portfolio of stunning landscape projects, water features, and garden designs across Nairobi.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            padding: 4rem 0;
+        }
+        .gallery-item {
+            aspect-ratio: 4/3;
+        }
+        .gallery-item.tall { aspect-ratio: 3/4; grid-row: span 2; }
+    </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <span class="logo-icon">
-                    <svg viewBox="0 0 100 100" width="40" height="40">
-                        <path d="M70,30 C70,20 60,15 50,15 C40,15 30,20 30,30 C30,45 70,45 70,60 C70,75 60,85 50,85 C35,85 25,75 25,75" fill="none" stroke="var(--primary-color)" stroke-width="8" stroke-linecap="round"/>
-                    </svg>
-                </span>
-                <div class="logo-text">
-                    <h1>SamScape s</h1>
-                    <span>solutions</span>
-                </div>
-            </a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="gallery.html" class="active">Gallery</a></li>
-                <li><a href="contact.html" class="btn btn-outline">Contact Us</a></li>
-            </ul>
-            <div class="hamburger">
-                <i class="fas fa-bars"></i>
+
+<!-- ===================== NAVIGATION ===================== -->
+<header class="site-header" id="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+        <a href="index.html" class="nav-brand">
+            <span class="brand-icon"><i class="fas fa-leaf"></i></span>
+            <div class="brand-text">
+                <span class="brand-name">Samscape's</span>
+                <span class="brand-sub">Solutions</span>
             </div>
-        </div>
+        </a>
+        <ul class="nav-links" id="nav-links" role="list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="nav-cta">Get a Quote</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
     </nav>
+</header>
 
-    <!-- Page Header -->
-    <header class="page-header" style="background: linear-gradient(rgba(15, 89, 38, 0.8), rgba(15, 89, 38, 0.8)), url('Business Images/IMG-20230505-WA0086.webp') center/cover;">
-        <div class="container">
-            <h1 class="animate-up">Our Gallery</h1>
-            <p class="animate-up delay-1">Explore some of our beautiful landscaping projects.</p>
-        </div>
-    </header>
+<!-- ===================== PAGE HERO ===================== -->
+<section class="page-hero">
+    <div class="container">
+        <div class="section-label light reveal-up">Portfolio</div>
+        <h1 class="reveal-up" style="animation-delay:0.1s">Our Living <em>Canvas</em></h1>
+        <p class="reveal-up" style="animation-delay:0.2s">A selection of our finest landscaping projects, showcasing our dedication to beauty and craftsmanship.</p>
+    </div>
+</section>
 
-    <!-- Gallery Masonry -->
-    <section class="gallery-page section bg-light">
-        <div class="container">
-            <div class="masonry-grid">
-                <!-- Row 1 -->
-                <div class="masonry-item scroll-reveal"><img src="Business Images/IMG-20230505-WA0086.webp" alt="Landscaping work"></div>
-                <div class="masonry-item scroll-reveal delay-1"><img src="Business Images/IMG-20230505-WA0087.webp" alt="Landscaping work"></div>
-                <div class="masonry-item scroll-reveal delay-2"><img src="Business Images/IMG-20230505-WA0088.webp" alt="Landscaping work"></div>
-                <!-- Row 2 -->
-                <div class="masonry-item scroll-reveal"><img src="Business Images/IMG-20230505-WA0090.webp" alt="Landscaping work"></div>
-                <div class="masonry-item scroll-reveal delay-1"><img src="Business Images/IMG-20230517-WA0012.webp" alt="Landscaping work"></div>
-                <div class="masonry-item scroll-reveal delay-2"><img src="Business Images/IMG-20230525-WA0019.webp" alt="Landscaping work"></div>
-                <!-- Row 3 -->
-                <div class="masonry-item scroll-reveal"><img src="Business Images/IMG-20230507-WA0000.webp" alt="Landscaping work"></div>
-                <div class="masonry-item scroll-reveal delay-1"><img src="Business Images/IMG-20230507-WA0004.webp" alt="Landscaping work"></div>
-                <div class="masonry-item scroll-reveal delay-2"><img src="Business Images/IMG-20230507-WA0008.webp" alt="Landscaping work"></div>
-                <!-- Row 4 -->
-                <div class="masonry-item scroll-reveal"><img src="Business Images/IMG-20230504-WA0013.webp" alt="Landscaping work"></div>
-                <div class="masonry-item scroll-reveal delay-1"><img src="Business Images/IMG-20230504-WA0028.webp" alt="Landscaping work"></div>
-                <div class="masonry-item scroll-reveal delay-2"><img src="Business Images/IMG-20230504-WA0029.webp" alt="Landscaping work"></div>
+<!-- ===================== GALLERY GRID ===================== -->
+<section class="section-light">
+    <div class="container">
+        <div class="gallery-grid">
+            <div class="gallery-item tall reveal-scale">
+                <img src="Business Images/IMG-20230505-WA0086.webp" alt="Garden project" loading="lazy">
+                <div class="gallery-hover"><span>View Image</span></div>
+            </div>
+            <div class="gallery-item reveal-scale" style="animation-delay:0.1s">
+                <img src="Business Images/IMG-20230504-WA0022.webp" alt="Landscaping" loading="lazy">
+                <div class="gallery-hover"><span>View Image</span></div>
+            </div>
+            <div class="gallery-item reveal-scale" style="animation-delay:0.15s">
+                <img src="Business Images/IMG-20230525-WA0019.webp" alt="Water feature" loading="lazy">
+                <div class="gallery-hover"><span>View Image</span></div>
+            </div>
+            <div class="gallery-item reveal-scale" style="animation-delay:0.2s">
+                <img src="Business Images/IMG-20230504-WA0028.webp" alt="Hardscaping" loading="lazy">
+                <div class="gallery-hover"><span>View Image</span></div>
+            </div>
+            <div class="gallery-item reveal-scale" style="animation-delay:0.25s">
+                <img src="Business Images/IMG-20230504-WA0019.webp" alt="Garden maintenance" loading="lazy">
+                <div class="gallery-hover"><span>View Image</span></div>
+            </div>
+            <div class="gallery-item tall reveal-scale" style="animation-delay:0.3s">
+                <img src="Business Images/IMG-20230507-WA0004.webp" alt="Planting design" loading="lazy">
+                <div class="gallery-hover"><span>View Image</span></div>
+            </div>
+            <div class="gallery-item reveal-scale" style="animation-delay:0.35s">
+                <img src="Business Images/IMG-20230507-WA0008.webp" alt="Irrigation" loading="lazy">
+                <div class="gallery-hover"><span>View Image</span></div>
+            </div>
+            <div class="gallery-item reveal-scale" style="animation-delay:0.4s">
+                <img src="Business Images/IMG-20230505-WA0088.webp" alt="Garden project" loading="lazy">
+                <div class="gallery-hover"><span>View Image</span></div>
+            </div>
+            <div class="gallery-item reveal-scale" style="animation-delay:0.1s">
+                <img src="Business Images/IMG-20230428-WA0014.webp" alt="Landscaping work" loading="lazy">
+                <div class="gallery-hover"><span>View Image</span></div>
+            </div>
+             <div class="gallery-item tall reveal-scale" style="animation-delay:0.15s">
+                <img src="Business Images/IMG-20230428-WA0018.webp" alt="Garden details" loading="lazy">
+                <div class="gallery-hover"><span>View Image</span></div>
+            </div>
+             <div class="gallery-item reveal-scale" style="animation-delay:0.2s">
+                <img src="Business Images/IMG-20230428-WA0019.webp" alt="Potted plants" loading="lazy">
+                <div class="gallery-hover"><span>View Image</span></div>
+            </div>
+             <div class="gallery-item reveal-scale" style="animation-delay:0.25s">
+                <img src="Business Images/IMG-20230505-WA0037.webp" alt="Walkway" loading="lazy">
+                <div class="gallery-hover"><span>View Image</span></div>
+            </div>
+             <div class="gallery-item reveal-scale" style="animation-delay:0.3s">
+                <img src="Business Images/IMG-20230505-WA0038.webp" alt="Garden path" loading="lazy">
+                <div class="gallery-hover"><span>View Image</span></div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="index.html" class="logo footer-logo">
-                        <span class="logo-icon">
-                            <svg viewBox="0 0 100 100" width="40" height="40">
-                                <path d="M70,30 C70,20 60,15 50,15 C40,15 30,20 30,30 C30,45 70,45 70,60 C70,75 60,85 50,85 C35,85 25,75 25,75" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
-                            </svg>
-                        </span>
-                        <div class="logo-text">
-                            <h1 style="color:white;">SamScape s</h1>
-                        </div>
-                    </a>
-                    <p>Bringing Solutions to landscapes. We are passionate about the environment and we love to see everything green.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+<!-- ===================== CTA BANNER ===================== -->
+<section class="cta-banner">
+    <img src="Business Images/IMG-20230504-WA0023.webp" alt="Beautiful landscape" class="cta-bg" loading="lazy">
+    <div class="cta-overlay"></div>
+    <div class="container cta-content">
+        <h2 class="reveal-up">Inspired by What<br><em>You See?</em></h2>
+        <p class="reveal-up">Your garden could be our next masterpiece.</p>
+        <div class="cta-actions reveal-up">
+            <a href="contact.html" class="btn btn-gold">Start Your Project</a>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+    <div class="footer-top">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="nav-brand">
+                    <span class="brand-icon"><i class="fas fa-leaf"></i></span>
+                    <div class="brand-text">
+                        <span class="brand-name">Samscape's</span>
+                        <span class="brand-sub">Solutions</span>
+                    </div>
+                </a>
+                <p>Crafting extraordinary outdoor spaces across Karen and Nairobi with passion, expertise, and an eye for natural beauty.</p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="services.html">Garden Design</a></li>
+                    <li><a href="services.html">Landscaping</a></li>
+                    <li><a href="services.html">Water Features</a></li>
+                    <li><a href="services.html">Hardscaping</a></li>
+                    <li><a href="services.html">Maintenance</a></li>
+                    <li><a href="services.html">Irrigation</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get In Touch</h4>
+                <div class="footer-contacts">
+                    <div class="fc-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:0701589053">0701 589 053</a>
+                    </div>
+                    <div class="fc-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:info@samscapessolutions.com">info@samscapessolutions.com</a>
+                    </div>
+                    <div class="fc-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>The Bull Karen · Windy Range · Pathways</span>
                     </div>
                 </div>
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h3>Contact Us</h3>
-                    <ul>
-                        <li>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>The Bull Karen<br>Windy Range Branch<br>Pathways Branch</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-phone-alt"></i>
-                            <span>0701589053</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-envelope"></i>
-                            <span>info@samscapessolutions.com</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Samscapes Solutions. All Rights Reserved.</p>
             </div>
         </div>
-    </footer>
-
-    <!-- Lightbox -->
-    <div class="lightbox" id="lightbox">
-        <span class="close-btn">&times;</span>
-        <img class="lightbox-content" id="lightbox-img">
     </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2025 Samscape's Solutions. All rights reserved.</p>
+            <p>Greener Landscapes, Greater Spaces 🌿</p>
+        </div>
+    </div>
+</footer>
 
-    <script src="script.js"></script>
+<a href="#" class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+<script src="script.js"></script>
 </body>
 </html>

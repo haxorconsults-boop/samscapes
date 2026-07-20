@@ -3,168 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Samscape's Solutions</title>
-    <link rel="stylesheet" href="style.css">
+    <title>About Us | Samscape's Solutions</title>
+    <meta name="description" content="Learn about Samscape's Solutions, Kenya's premier landscaping experts. Discover our story, our philosophy, and our commitment to sustainable garden design.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <span class="logo-icon">
-                    <svg viewBox="0 0 100 100" width="40" height="40">
-                        <path d="M70,30 C70,20 60,15 50,15 C40,15 30,20 30,30 C30,45 70,45 70,60 C70,75 60,85 50,85 C35,85 25,75 25,75" fill="none" stroke="var(--primary-color)" stroke-width="8" stroke-linecap="round"/>
-                    </svg>
-                </span>
-                <div class="logo-text">
-                    <h1>SamScape s</h1>
-                    <span>solutions</span>
-                </div>
-            </a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html" class="btn btn-outline">Contact Us</a></li>
-            </ul>
-            <div class="hamburger">
-                <i class="fas fa-bars"></i>
+
+<!-- ===================== NAVIGATION ===================== -->
+<header class="site-header" id="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+        <a href="index.html" class="nav-brand">
+            <span class="brand-icon"><i class="fas fa-leaf"></i></span>
+            <div class="brand-text">
+                <span class="brand-name">Samscape's</span>
+                <span class="brand-sub">Solutions</span>
             </div>
-        </div>
+        </a>
+        <ul class="nav-links" id="nav-links" role="list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link active">About</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="nav-cta">Get a Quote</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
     </nav>
+</header>
 
-    <!-- Page Header -->
-    <header class="page-header" style="background: linear-gradient(rgba(15, 89, 38, 0.8), rgba(15, 89, 38, 0.8)), url('Business Images/IMG-20230504-WA0034.webp') center/cover;">
-        <div class="container">
-            <h1 class="animate-up">About Us</h1>
-            <p class="animate-up delay-1">Bringing Solutions to landscapes.</p>
-        </div>
-    </header>
+<!-- ===================== PAGE HERO ===================== -->
+<section class="page-hero">
+    <div class="container">
+        <div class="section-label light reveal-up">Our Story</div>
+        <h1 class="reveal-up" style="animation-delay:0.1s">Rooted in <em>Passion</em></h1>
+        <p class="reveal-up" style="animation-delay:0.2s">Discover the vision and expertise behind Nairobi's most exquisite outdoor spaces.</p>
+    </div>
+</section>
 
-    <!-- About Detailed Section -->
-    <section class="about-detailed section">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-image scroll-reveal">
-                    <img src="Business Images/IMG-20230505-WA0082.webp" alt="Our passionate team's work">
-                </div>
-                <div class="about-text scroll-reveal right">
-                    <span class="subtitle">Who We Are</span>
-                    <h2>A Top Landscaping Company in Kenya</h2>
-                    <p>Samscapes Solution is a company registered as a limited company. The name simply means <strong>Bringing Solutions to landscapes</strong>. We are passionate about the environment and we love to see everything green.</p>
-                    <p>Our team is made up of visionary men and women who love nature. With over ten years' experience across the country, you can depend on us to deliver high-quality, dependable landscaping and gardening services.</p>
-                    <p>Whether you need a serene water feature, comprehensive hardscaping, or regular garden care, we approach every project with meticulous love for detail.</p>
+<!-- ===================== THE STORY ===================== -->
+<section class="section-light">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-text reveal-left">
+                <h2 class="section-title">Cultivating Beauty<br>Since <em>2017</em></h2>
+                <p class="lead-text">Samscape's Solutions began with a simple belief: that every outdoor space has the potential to elevate the human spirit.</p>
+                <p>Founded in Karen, Nairobi, we've spent the last seven years transforming ordinary yards into extraordinary sanctuaries. We are a collective of horticulturists, landscape architects, and craftsmen who share a profound respect for nature and a commitment to meticulous design.</p>
+                <p>Our approach is deeply personal. We don't just plant gardens; we curate living environments that reflect your lifestyle and harmonize with the local ecology. From the initial soil assessment to the final placement of a feature stone, our attention to detail is unwavering.</p>
+            </div>
+            <div class="about-images">
+                <div class="img-primary reveal-right">
+                    <img src="Business Images/IMG-20230504-WA0019.webp" alt="Samscape's team at work" loading="lazy">
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Mission & Vision Section -->
-    <section class="mission-vision-detailed section bg-light">
-        <div class="container">
-            <div class="section-header center scroll-reveal">
-                <h2>Our Guiding Principles</h2>
-                <p>What drives us to create greener landscapes every day.</p>
-            </div>
-            <div class="mv-detailed-flex">
-                <div class="mv-detailed-box scroll-reveal">
-                    <div class="icon-circle"><i class="fas fa-bullseye"></i></div>
-                    <h3>Our Mission</h3>
-                    <p>To deliver visionary landscaping with a passion for the environment and love for nature. We are driven to see everything green and bring practical, beautiful solutions to landscapes.</p>
+<!-- ===================== OUR PHILOSOPHY ===================== -->
+<section class="section-cream">
+    <div class="container">
+        <div class="section-header centered">
+            <div class="section-label">Our Philosophy</div>
+            <h2 class="section-title">Design with <em>Purpose</em></h2>
+        </div>
+        <div class="why-grid" style="grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+            <div class="pillar reveal-up">
+                <div class="pillar-icon"><i class="fas fa-seedling"></i></div>
+                <div>
+                    <h4>Ecological Harmony</h4>
+                    <p>We prioritize native plants and sustainable practices to create landscapes that support local biodiversity.</p>
                 </div>
-                <div class="mv-detailed-box scroll-reveal delay-1">
-                    <div class="icon-circle"><i class="fas fa-eye"></i></div>
-                    <h3>Our Vision</h3>
-                    <p>To be the best service delivery landscapers in Africa while meeting clients' needs and exceeding their expectations.</p>
+            </div>
+            <div class="pillar reveal-up" style="animation-delay:0.1s">
+                <div class="pillar-icon"><i class="fas fa-gem"></i></div>
+                <div>
+                    <h4>Enduring Quality</h4>
+                    <p>We source the finest materials and employ expert craftsmanship to ensure your garden stands the test of time.</p>
+                </div>
+            </div>
+            <div class="pillar reveal-up" style="animation-delay:0.2s">
+                <div class="pillar-icon"><i class="fas fa-handshake"></i></div>
+                <div>
+                    <h4>Client Collaboration</h4>
+                    <p>Your vision is our blueprint. We work closely with you at every step to ensure the final result exceeds expectations.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Values Section (Reused from index) -->
-    <section class="values section bg-dark text-white">
-        <div class="container">
-            <div class="values-flex">
-                <div class="values-text scroll-reveal">
-                    <h2>Our Core Values</h2>
-                    <ul class="values-list">
-                        <li><i class="fas fa-check-circle"></i> Customer-focused services</li>
-                        <li><i class="fas fa-check-circle"></i> Passion for nature</li>
-                        <li><i class="fas fa-check-circle"></i> Integrity in service delivery</li>
-                        <li><i class="fas fa-check-circle"></i> Efficient execution of projects</li>
-                        <li><i class="fas fa-check-circle"></i> Meticulous and love for detail</li>
-                        <li><i class="fas fa-check-circle"></i> Reliability and dependability at all times</li>
-                        <li><i class="fas fa-check-circle"></i> Cost-effective products and services</li>
-                    </ul>
-                </div>
-                <div class="values-image scroll-reveal right">
-                     <img src="Business Images/IMG-20230505-WA0090.webp" alt="Landscaping details">
+<!-- ===================== CTA BANNER ===================== -->
+<section class="cta-banner">
+    <img src="Business Images/IMG-20230507-WA0004.webp" alt="Beautiful landscape" class="cta-bg" loading="lazy">
+    <div class="cta-overlay"></div>
+    <div class="container cta-content">
+        <h2 class="reveal-up">Experience the<br><em>Difference</em></h2>
+        <p class="reveal-up">Ready to start your landscape journey with us?</p>
+        <div class="cta-actions reveal-up">
+            <a href="contact.html" class="btn btn-gold">Let's Talk</a>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+    <div class="footer-top">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="nav-brand">
+                    <span class="brand-icon"><i class="fas fa-leaf"></i></span>
+                    <div class="brand-text">
+                        <span class="brand-name">Samscape's</span>
+                        <span class="brand-sub">Solutions</span>
+                    </div>
+                </a>
+                <p>Crafting extraordinary outdoor spaces across Karen and Nairobi with passion, expertise, and an eye for natural beauty.</p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="index.html" class="logo footer-logo">
-                        <span class="logo-icon">
-                            <svg viewBox="0 0 100 100" width="40" height="40">
-                                <path d="M70,30 C70,20 60,15 50,15 C40,15 30,20 30,30 C30,45 70,45 70,60 C70,75 60,85 50,85 C35,85 25,75 25,75" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
-                            </svg>
-                        </span>
-                        <div class="logo-text">
-                            <h1 style="color:white;">SamScape s</h1>
-                        </div>
-                    </a>
-                    <p>Bringing Solutions to landscapes. We are passionate about the environment and we love to see everything green.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="services.html">Garden Design</a></li>
+                    <li><a href="services.html">Landscaping</a></li>
+                    <li><a href="services.html">Water Features</a></li>
+                    <li><a href="services.html">Hardscaping</a></li>
+                    <li><a href="services.html">Maintenance</a></li>
+                    <li><a href="services.html">Irrigation</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get In Touch</h4>
+                <div class="footer-contacts">
+                    <div class="fc-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:0701589053">0701 589 053</a>
+                    </div>
+                    <div class="fc-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:info@samscapessolutions.com">info@samscapessolutions.com</a>
+                    </div>
+                    <div class="fc-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>The Bull Karen · Windy Range · Pathways</span>
                     </div>
                 </div>
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h3>Contact Us</h3>
-                    <ul>
-                        <li>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>The Bull Karen<br>Windy Range Branch<br>Pathways Branch</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-phone-alt"></i>
-                            <span>0701589053</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-envelope"></i>
-                            <span>info@samscapessolutions.com</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Samscapes Solutions. All Rights Reserved.</p>
             </div>
         </div>
-    </footer>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2025 Samscape's Solutions. All rights reserved.</p>
+            <p>Greener Landscapes, Greater Spaces 🌿</p>
+        </div>
+    </div>
+</footer>
 
-    <script src="script.js"></script>
+<a href="#" class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+<script src="script.js"></script>
 </body>
 </html>
