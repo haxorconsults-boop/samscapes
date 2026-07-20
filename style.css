@@ -185,16 +185,16 @@ p { font-size: 1rem; color: var(--text-mid); }
     transition: var(--transition);
 }
 .site-header.scrolled {
-    background: rgba(255,255,255,0.96);
+    background: rgba(10,34,21,0.96);
     backdrop-filter: blur(20px);
-    box-shadow: 0 2px 30px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.3); border-bottom: 1px solid rgba(255,255,255,0.05);
 }
-.site-header.scrolled .nav-link { color: var(--text-dark); }
-.site-header.scrolled .nav-link:hover { color: var(--forest-mid); }
-.site-header.scrolled .nav-cta { background: var(--forest-mid); color: white; }
-.site-header.scrolled .brand-name { color: var(--forest-deep); }
-.site-header.scrolled .brand-sub { color: var(--sage); }
-.site-header.scrolled .brand-icon { color: var(--forest-mid); }
+
+.site-header.scrolled .nav-link:hover { color: var(--gold); }
+
+
+
+
 
 .nav-brand { display: flex; align-items: center; gap: 0.75rem; }
 .brand-icon { font-size: 1.5rem; color: var(--sage-light); }
@@ -239,7 +239,7 @@ p { font-size: 1rem; color: var(--text-mid); }
 
 .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
 .hamburger span { display: block; width: 24px; height: 2px; background: white; border-radius: 2px; transition: var(--transition); }
-.site-header.scrolled .hamburger span { background: var(--text-dark); }
+
 
 /* ---- HERO ---- */
 .hero {
