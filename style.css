@@ -185,10 +185,14 @@ p { font-size: 1rem; color: var(--text-mid); }
     transition: var(--transition);
 }
 .site-header.scrolled {
-    background: rgba(10,34,21,0.96);
+    background: rgba(255,255,255,0.96);
     backdrop-filter: blur(20px);
-    box-shadow: 0 4px 30px rgba(0,0,0,0.3); border-bottom: 1px solid rgba(255,255,255,0.05);
+    box-shadow: 0 2px 30px rgba(0,0,0,0.08);
 }
+.site-header.scrolled .nav-link { color: var(--text-dark); }
+.site-header.scrolled .nav-link:hover { color: var(--forest-mid); }
+.site-header.scrolled .nav-cta { background: var(--forest-mid); color: white; }
+.site-header.scrolled .hamburger span { background: var(--text-dark); }
 
 .site-header.scrolled .nav-link:hover { color: var(--gold); }
 
